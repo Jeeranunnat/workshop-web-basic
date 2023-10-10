@@ -1,0 +1,331 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+  width: 65vw;
+  margin: 0 auto;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.header {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 60px 0 60px 0;
+}
+button {
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border: 4px solid black;
+  background: white;
+}
+button p {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+  padding-left: 10px;
+}
+button:hover {
+  cursor: pointer;
+}
+section {
+  border-bottom: 2px solid #efefef;
+}
+h1 {
+  font-weight: 300;
+  font-size: 28px;
+  margin: 0;
+}
+h3 {
+  margin-top: 8px;
+}
+/* navigation */
+nav {
+  padding: 24px 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 2px solid #efefef;
+}
+nav .nav-logo {
+  font-weight: bold;
+  font-size: 22px;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .container .nav-link {
+  display: flex;
+  font-weight: bold;
+  font-size: 13px;
+}
+nav .container .nav-link a {
+  margin-right: 20px;
+}
+/* home */
+#home .slide {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+#home p {
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slide-1 {
+  background: url(https://img.freepik.com/free-photo/close-up-businessman-with-digital-tablet_1098-549.jpg?size=626&ext=jpg&ga=GA1.1.769681778.1683626233);
+}
+.slide-2 {
+  background: url(https://img.freepik.com/free-photo/businessmen-businesswomen-meeting-brainstorming-ideas_7861-3065.jpg?size=626&ext=jpg&ga=GA1.1.769681778.1683626233);
+}
+.slide-3 {
+  background: url(https://img.freepik.com/free-photo/coffee-shop-cafe-latte-cappuccino-newspaper-concept_53876-16322.jpg?size=626&ext=jpg&ga=GA1.2.769681778.1683626233&semt=sph);
+}
+#home .slideshow {
+  position: relative;
+}
+#home .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 30px;
+}
+.l {
+  left: 0;
+}
+.r {
+  right: 0;
+}
+
+/*about us*/
+span {
+  border-bottom: 4px solid black;
+}
+#about-us .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#about-us .container .header {
+  text-transform: uppercase;
+}
+#about-us .container p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+}
+#about-us button {
+  margin: 60px 0 60px 0;
+}
+/* our team */
+#our-team .team {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#our-team .card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#our-team .card img {
+  width: 100%;
+  height: 230px;
+}
+#our-team .card .card-detail {
+  margin: 20px 0;
+}
+#our-team .card .card-detail .card-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+#our-team .card .card-detail p {
+  font-weight: 400;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+}
+#our-team .card .card-social {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 50px;
+  border-top: 2px solid #efefef;
+  border-bottom: 2px solid #efefef;
+}
+#our-team .card .card-social i {
+  padding: 0 3px;
+}
+/* our skills */
+#our-skills .our-skills-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+#our-skills .our-skills-content .left {
+  width: 55%;
+}
+#our-skills .our-skills-content .left p {
+  font-weight: 300;
+  font-size: 13px;
+  color: #999999;
+}
+#our-skills .our-skills-content .right {
+  width: 40%;
+  font-size: 13px;
+  font-weight: 300;
+}
+#our-skills .our-skills-content .right li {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+#our-skills .our-skills-content .right li .l1 {
+  font-weight: bold;
+  width: 90%;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #efefef;
+}
+#our-skills .our-skills-content .right li .r1 {
+  color: #999999;
+  width: 10%;
+  padding-bottom: 8px;
+  border-bottom: 3px solid black;
+}
+#our-skills .our-skills-content .right li .l2 {
+  font-weight: bold;
+  width: 50%;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #efefef;
+}
+#our-skills .our-skills-content .right li .r2 {
+  color: #999999;
+  width: 50%;
+  padding-bottom: 8px;
+  border-bottom: 3px solid black;
+}
+#our-skills .our-skills-content .right li .l3 {
+  font-weight: bold;
+  width: 95%;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #efefef;
+}
+#our-skills .our-skills-content .right li .r3 {
+  color: #999999;
+  width: 5%;
+  padding-bottom: 8px;
+  border-bottom: 3px solid black;
+}
+#our-skills .our-skills-content .right li .l4 {
+  font-weight: bold;
+  width: 70%;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #efefef;
+}
+#our-skills .our-skills-content .right li .r4 {
+  color: #999999;
+  width: 30%;
+  padding-bottom: 8px;
+  border-bottom: 3px solid black;
+}
+#our-skills .our-skills-content .right li .l5 {
+  font-weight: bold;
+  width: 90%;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #efefef;
+}
+#our-skills .our-skills-content .right li .r5 {
+  color: #999999;
+  width: 10%;
+  padding-bottom: 8px;
+  border-bottom: 3px solid black;
+}
+#our-skills .our-skills-content .right li .l6 {
+  font-weight: bold;
+  width: 60%;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #efefef;
+}
+#our-skills .our-skills-content .right li .r6 {
+  color: #999999;
+  width: 40%;
+  padding-bottom: 8px;
+  border-bottom: 3px solid black;
+}
+/* our follow */
+#follow {
+  position: relative;
+  background-image: url(https://img.freepik.com/free-photo/mt-fuji-forms-with-clouds-background_1258-95.jpg?size=626&ext=jpg&ga=GA1.1.769681778.1683626233&semt=sph);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  transform: translate3d(0, 0, -1px);
+}
+#follow .parallaxshow {
+  /* background-color: aqua; */
+  position: absolute;
+  width: 35vw;
+  height: 100%;
+  margin: auto;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  text-align: center;
+}
+#follow .parallaxshow .icon {
+  font-size: 40px;
+  padding-top: 40px;
+}
+#follow .parallaxshow .parallax .topic {
+  font-weight: 600;
+  padding-top: 5px;
+}
+#follow .parallaxshow .parallax .score {
+  font-size: 100px;
+  font-weight: 800;
+}
+
+#follow .parallaxshow .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+}
+
+/* our services */
